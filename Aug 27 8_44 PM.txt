@@ -1,0 +1,22 @@
+
+Insert into courses(Course_ID,Domain,Student_Intake) values
+("DL1009","Deep Learning",75);
+
+Alter table courses change column
+Faculty Faculty varchar(20) default("Saurabh");
+
+Insert into courses(Course_ID,Course_Name,Domain,Student_Intake) values
+("DL1004","Deep learning 2.0","Deep Learning",75);
+
+select * from courses;
+
+alter table courses change column
+Student_intake Student_intake int check(Student_intake >= 50); 
+
+Insert into courses values
+("ML1002","Machine Learning 2.0","Machine Learning", "Saurabh",55,"Live");
+
+Alter table courses change column
+Course_id Course_id char(6) Primary Key;
+
+describe courses;
